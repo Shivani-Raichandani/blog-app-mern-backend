@@ -4,11 +4,13 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 import Connection from './database/db.js';
 import router from './routes/route.js';
+import dot
 
 
 const app = express();
 
-const PORT = 8000;
+//const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 
